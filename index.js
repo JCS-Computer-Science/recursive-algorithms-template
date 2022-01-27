@@ -29,10 +29,10 @@ console.log(`Searching for ${searchTestTerm}`);
 console.log(`Result should be ${searchTestAnswer}\n`);
 
 console.log("Recursive Binary Search:");
-let linearSearchResult = binarySearchRec(
+let binarySearchResult = binarySearchRec(
 	[...searchTestArray],
 	searchTestTerm,
 	0,
 	searchTestArray.length - 1
 );
-console.log(`Result: ${linearSearchResults}\n`);
+console.log(`Result: ${binarySearchResult}\n`);
