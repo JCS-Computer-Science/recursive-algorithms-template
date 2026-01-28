@@ -18,10 +18,7 @@ console.log(`Quick Sort: \n${quickResult}\n`);
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
 const searchTestArraySize = 10;
-const searchTestArray = Array.from(
-	{ length: searchTestArraySize },
-	(v, i) => i * 2 + 1
-);
+const searchTestArray = Array.from({ length: searchTestArraySize }, (v, i) => i * 2 + 1);
 const searchTestAnswer = Math.floor(Math.random() * searchTestArraySize);
 const searchTestTerm = searchTestArray[searchTestAnswer];
 console.log(`Search Test Array: \n${searchTestArray}`);
@@ -29,10 +26,10 @@ console.log(`Searching for ${searchTestTerm}`);
 console.log(`Result should be ${searchTestAnswer}\n`);
 
 console.log("Recursive Binary Search:");
-let linearSearchResult = binarySearchRec(
+let binarySearchResult = binarySearchRec(
 	[...searchTestArray],
 	searchTestTerm,
 	0,
 	searchTestArray.length - 1
 );
-console.log(`Result: ${linearSearchResults}\n`);
+console.log(`Result: ${binarySearchResult}\n`);
